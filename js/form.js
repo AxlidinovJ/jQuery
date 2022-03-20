@@ -2,7 +2,9 @@ $(document).ready(function(){
     
     $("#oddi").click(function(){
         $("#a").attr('type','text');
-
+        var j = $("#a").val();
+        var m = $("#label").text();
+        $("#label").text(parseInt(j)+parseInt(m));
     });
 
     $("#ozgar").click(function(){
