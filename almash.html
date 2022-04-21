@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="one" value="Bir">
+    <input type="button" id="tuo" value="Ikki">
+    <input type="button" id="three" value="Uch"> 
+    <textarea id="text" cols="30" rows="10"></textarea>
+    <img src="./img/1.jpg" alt="">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $("#one").click(function(){
+            text = $("#one").val();
+            $("#text").val(text); 
+            $("img").attr('src','img/1.jpg');  
+        })  ;
+
+        $("#tuo").click(function(){
+            text = $("#tuo").val();
+            $("#text").val(text);
+            $("img").attr('src','img/2.jpg');        
+        })  ;
+
+        $("#three").click(function(){
+            text = $("#three").val();
+            $("#text").val(text); 
+            $("img").attr('src','img/3.jpg');       
+        })  ;
+
+
+
+    </script>
+
+
+</body>
+</html>
