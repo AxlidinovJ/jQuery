@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <input type="color" name="rang" id="rang">
+    <input type="button" value="qoshish" id="add">
+
+    <div class="royxat">
+
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $("#add").click(function(){
+            var rang = $("#rang").val();
+
+                var  d = "<h2 style='background: "+rang+"'>"+rang+"</h2>";
+                // $(".royxat").append(d);
+                $(".royxat").prepend(d);
+
+            });
+            
+
+        });
+
+    </script>
+
+</body>
+</html>
