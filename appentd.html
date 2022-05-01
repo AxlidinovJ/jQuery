@@ -11,6 +11,8 @@
 
     <input type="color" name="rang" id="rang">
     <input type="button" value="qoshish" id="add">
+    <input type="button" value="remove" id="remove">
+    <input type="button" value="empty" id="empty">
 
     <div class="royxat">
 
@@ -26,12 +28,21 @@
             $("#add").click(function(){
             var rang = $("#rang").val();
 
-                var  d = "<h2 style='background: "+rang+"'>"+rang+"</h2>";
-                // $(".royxat").append(d);
+                var  d = "<h3 style='background: "+rang+"'>"+rang+"</h3>";
+                $(".royxat").append(d);
                 $(".royxat").prepend(d);
+                $(".royxat").before("<hr>");
+                $(".royxat").after("<hr>");
 
             });
             
+            $("#remove").click(function(){
+                $(".royxat").remove();
+            });
+
+            $("#empty").click(function(){
+                $(".royxat").empty();
+            });
 
         });
 
