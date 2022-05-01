@@ -17,6 +17,8 @@
 <body>
 
     <h2>jQuery CSS</h2>
+    <h2>jQuery CSS</h2>
+    <h2>jQuery CSS</h2>
     <img src="./img.jpg" alt="">
 
     <script src="js/jquery.min.js"></script>
@@ -24,14 +26,24 @@
     <script>
 
         $("img").click(function(){
-            var isActive = $(this).attr("class");
-            if(isActive != "img"){
-                $(this).addClass("img")
-            }else{
-                $(this).removeClass("img")
-            }
+            // var isActive = $(this).attr("class");
+            // if(isActive != "img"){
+            //     $(this).addClass("img")
+            // }else{
+            //     $(this).removeClass("img")
+            // }
+            $(this).toggleClass("img");
 
         });
+
+       $("h2").click(function(){
+
+        $(this).css({
+            fontSize:'20px',
+            'color':'red',
+        });
+
+       });
 
     </script>
 </body>
